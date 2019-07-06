@@ -1,0 +1,324 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Web.Api\\ArticleApi.Web.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Application\\ArticleApi.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Application\\ArticleApi.Application.csproj",
+        "projectName": "ArticleApi.Application",
+        "projectPath": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Application\\ArticleApi.Application.csproj",
+        "packagesPath": "C:\\Users\\Nova\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Persistence\\ArticleApi.Persistence.csproj": {
+                "projectPath": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Persistence\\ArticleApi.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Domain\\ArticleApi.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Domain\\ArticleApi.Domain.csproj",
+        "projectName": "ArticleApi.Domain",
+        "projectPath": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Domain\\ArticleApi.Domain.csproj",
+        "packagesPath": "C:\\Users\\Nova\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Infrastructure\\ArticleApi.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Infrastructure\\ArticleApi.Infrastructure.csproj",
+        "projectName": "ArticleApi.Infrastructure",
+        "projectPath": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Infrastructure\\ArticleApi.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Nova\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Persistence\\ArticleApi.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Persistence\\ArticleApi.Persistence.csproj",
+        "projectName": "ArticleApi.Persistence",
+        "projectPath": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Persistence\\ArticleApi.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Nova\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Domain\\ArticleApi.Domain.csproj": {
+                "projectPath": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Domain\\ArticleApi.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Web.Api\\ArticleApi.Web.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Web.Api\\ArticleApi.Web.Api.csproj",
+        "projectName": "ArticleApi.Web.Api",
+        "projectPath": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Web.Api\\ArticleApi.Web.Api.csproj",
+        "packagesPath": "C:\\Users\\Nova\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Web.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Application\\ArticleApi.Application.csproj": {
+                "projectPath": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Application\\ArticleApi.Application.csproj"
+              },
+              "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Domain\\ArticleApi.Domain.csproj": {
+                "projectPath": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Domain\\ArticleApi.Domain.csproj"
+              },
+              "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Infrastructure\\ArticleApi.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Infrastructure\\ArticleApi.Infrastructure.csproj"
+              },
+              "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Persistence\\ArticleApi.Persistence.csproj": {
+                "projectPath": "C:\\Users\\Nova\\source\\repos\\ArticleApi\\ArticleApi.Persistence\\ArticleApi.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

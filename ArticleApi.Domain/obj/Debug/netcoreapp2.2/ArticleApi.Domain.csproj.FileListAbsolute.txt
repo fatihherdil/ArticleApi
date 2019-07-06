@@ -1,0 +1,9 @@
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Domain\bin\Debug\netcoreapp2.2\ArticleApi.Domain.deps.json
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Domain\bin\Debug\netcoreapp2.2\ArticleApi.Domain.dll
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Domain\bin\Debug\netcoreapp2.2\ArticleApi.Domain.pdb
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Domain\obj\Debug\netcoreapp2.2\ArticleApi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Domain\obj\Debug\netcoreapp2.2\ArticleApi.Domain.AssemblyInfoInputs.cache
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Domain\obj\Debug\netcoreapp2.2\ArticleApi.Domain.AssemblyInfo.cs
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Domain\obj\Debug\netcoreapp2.2\ArticleApi.Domain.dll
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Domain\obj\Debug\netcoreapp2.2\ArticleApi.Domain.pdb
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Domain\obj\Debug\netcoreapp2.2\ArticleApi.Domain.csprojAssemblyReference.cache

@@ -1,0 +1,14 @@
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Persistence\bin\Debug\netcoreapp2.2\ArticleApi.Persistence.deps.json
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Persistence\bin\Debug\netcoreapp2.2\ArticleApi.Persistence.dll
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Persistence\obj\Debug\netcoreapp2.2\ArticleApi.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Persistence\obj\Debug\netcoreapp2.2\ArticleApi.Persistence.AssemblyInfoInputs.cache
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Persistence\obj\Debug\netcoreapp2.2\ArticleApi.Persistence.AssemblyInfo.cs
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Persistence\bin\Debug\netcoreapp2.2\ArticleApi.Persistence.runtimeconfig.json
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Persistence\bin\Debug\netcoreapp2.2\ArticleApi.Persistence.runtimeconfig.dev.json
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Persistence\obj\Debug\netcoreapp2.2\ArticleApi.Persistence.csprojAssemblyReference.cache
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Persistence\bin\Debug\netcoreapp2.2\ArticleApi.Persistence.pdb
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Persistence\bin\Debug\netcoreapp2.2\ArticleApi.Domain.dll
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Persistence\bin\Debug\netcoreapp2.2\ArticleApi.Domain.pdb
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Persistence\obj\Debug\netcoreapp2.2\ArticleApi.Persistence.csproj.CopyComplete
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Persistence\obj\Debug\netcoreapp2.2\ArticleApi.Persistence.dll
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Persistence\obj\Debug\netcoreapp2.2\ArticleApi.Persistence.pdb

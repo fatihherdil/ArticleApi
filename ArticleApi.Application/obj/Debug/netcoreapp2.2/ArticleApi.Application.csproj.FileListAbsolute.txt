@@ -1,0 +1,14 @@
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Application\bin\Debug\netcoreapp2.2\ArticleApi.Application.deps.json
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Application\bin\Debug\netcoreapp2.2\ArticleApi.Application.dll
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Application\bin\Debug\netcoreapp2.2\ArticleApi.Application.pdb
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Application\bin\Debug\netcoreapp2.2\ArticleApi.Domain.dll
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Application\bin\Debug\netcoreapp2.2\ArticleApi.Persistence.dll
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Application\bin\Debug\netcoreapp2.2\ArticleApi.Persistence.pdb
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Application\bin\Debug\netcoreapp2.2\ArticleApi.Domain.pdb
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Application\obj\Debug\netcoreapp2.2\ArticleApi.Application.csprojAssemblyReference.cache
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Application\obj\Debug\netcoreapp2.2\ArticleApi.Application.csproj.CoreCompileInputs.cache
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Application\obj\Debug\netcoreapp2.2\ArticleApi.Application.AssemblyInfoInputs.cache
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Application\obj\Debug\netcoreapp2.2\ArticleApi.Application.AssemblyInfo.cs
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Application\obj\Debug\netcoreapp2.2\ArticleApi.Application.csproj.CopyComplete
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Application\obj\Debug\netcoreapp2.2\ArticleApi.Application.dll
+C:\Users\Nova\source\repos\ArticleApi\ArticleApi.Application\obj\Debug\netcoreapp2.2\ArticleApi.Application.pdb

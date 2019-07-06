@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="2.2.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ArticleApi.Application\ArticleApi.Application.csproj" />
+    <ProjectReference Include="..\ArticleApi.Domain\ArticleApi.Domain.csproj" />
+    <ProjectReference Include="..\ArticleApi.Infrastructure\ArticleApi.Infrastructure.csproj" />
+    <ProjectReference Include="..\ArticleApi.Persistence\ArticleApi.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

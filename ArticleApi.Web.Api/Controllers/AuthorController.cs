@@ -1,8 +1,10 @@
-﻿using ArticleApi.Application.Repository;
+﻿using System.Linq;
+using ArticleApi.Application.Repository;
 using ArticleApi.Application.Response;
 using ArticleApi.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using ArticleApi.Application.Models;
 
 namespace ArticleApi.Web.Api.Controllers
 {
@@ -16,7 +18,8 @@ namespace ArticleApi.Web.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> Authors()
         {
-            return Json(new DefaultResponse(await Repository.GetAllAsync()));
+            var authors = await Repository.GetAllAsync();
+            return Json(new DefaultResponse(authors.Select(author => author.ConvertToDto())));
         }
 
         [HttpPost]

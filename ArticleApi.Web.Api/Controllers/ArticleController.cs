@@ -1,4 +1,5 @@
-﻿using ArticleApi.Application.Models;
+﻿using System.Linq;
+using ArticleApi.Application.Models;
 using ArticleApi.Application.Repository;
 using ArticleApi.Application.Response;
 using ArticleApi.Domain.Entities;
@@ -17,7 +18,8 @@ namespace ArticleApi.Web.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> Articles()
         {
-            return Json(new DefaultResponse(await Repository.GetAllAsync()));
+            var articles = await Repository.GetAllAsync();
+            return Json(new DefaultResponse(articles.Select(article => article.ConvertToDto())));
         }
 
         [HttpPost]

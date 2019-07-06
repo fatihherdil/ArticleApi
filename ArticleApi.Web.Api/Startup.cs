@@ -47,13 +47,15 @@ namespace ArticleApi.Web.Api
                 case "MySql":
                     services.AddDbContext<ArticleApiDbContext>(options =>
                     {
-                        options.UseMySql(Configuration.GetConnectionString("mySqlServer"));
+                        options.UseMySQL(Configuration.GetConnectionString("mySqlServer"));
+                        options.UseLazyLoadingProxies();
                     });
                     break;
                 case "SqlServer":
                     services.AddDbContext<ArticleApiDbContext>(options =>
                     {
                         options.UseSqlServer(Configuration.GetConnectionString("sqlServer"));
+                        options.UseLazyLoadingProxies();
                     });
                     break;
                 default:

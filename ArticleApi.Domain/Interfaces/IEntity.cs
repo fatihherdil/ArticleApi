@@ -1,4 +1,4 @@
-﻿namespace ArticleApi.Domain.Entities
+﻿namespace ArticleApi.Domain.Interfaces
 {
     public interface IEntity
     {

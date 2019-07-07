@@ -16,13 +16,24 @@ namespace ArticleApi.Domain.Entities
 
         public override Author GetNullInstance()
         {
-            return new Author
+            var nullAuthor = new Author
             {
                 Bio = "Bio NULL",
                 Name = "Name NULL",
                 Id = -1,
-                Articles = new HashSet<Article>() { new Article().GetNullInstance() }
+                Articles = new HashSet<Article>()
             };
+
+            nullAuthor.Articles.Add(new Article
+            {
+                Content = "Content NULL",
+                Name = "Name NULL",
+                Id = -1,
+                Author = nullAuthor,
+                AuthorId = nullAuthor.Id
+            });
+
+            return nullAuthor;
         }
 
         [Required]

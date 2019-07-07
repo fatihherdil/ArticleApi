@@ -12,6 +12,7 @@
     "IIS Express": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": "Articles",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -19,8 +20,9 @@
     "ArticleApi.Web.Api": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": "Articles",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Release"
       },
       "applicationUrl": "http://localhost:5000"
     }

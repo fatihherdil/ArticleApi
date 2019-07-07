@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System;
 using System.IO.Compression;
+using ArticleApi.Web.Api.Middlewares;
 
 namespace ArticleApi.Web.Api
 {
@@ -59,7 +60,7 @@ namespace ArticleApi.Web.Api
                     });
                     break;
                 default:
-                    throw new MissingMemberException("Unknown DB Provider.");
+                    throw new IndexOutOfRangeException("Unknown DB Provider.");
             }
 
             services.AddScoped<RepositoryBase<Article>>();
@@ -75,6 +76,10 @@ namespace ArticleApi.Web.Api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseMiddleware<ErrorHandlingMiddleware>();
             }
 
             app.UseResponseCompression();

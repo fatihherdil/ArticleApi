@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ArticleApi.Domain.Entities
@@ -15,13 +16,31 @@ namespace ArticleApi.Domain.Entities
 
         public override Article GetNullInstance()
         {
-            return new Article
+            var nullArticle = new Article
             {
                 Content = "Content NULL",
                 Name = "Name NULL",
                 Id = -1,
-                Author = new Author().GetNullInstance()
+                AuthorId = -1,
+                Author = new Author
+                {
+                    Id = -1,
+                    Name = "Name NULL",
+                    Bio = "Bio NULL",
+                    Articles = new HashSet<Article>()
+                }
             };
+
+            nullArticle.Author.Articles.Add(new Article
+            {
+                    Content = "Content NULL",
+                    Name = "Name NULL",
+                    Id = -1,
+                    Author = nullArticle.Author,
+                    AuthorId = nullArticle.AuthorId
+            });
+
+            return nullArticle;
         }
 
         [Required]
@@ -30,8 +49,8 @@ namespace ArticleApi.Domain.Entities
 
         public string Content { get; set; }
 
-        [Required(ErrorMessage = "An Article must have a Author")]
-        public int AuthorId { get; set; }
+        //[Required(ErrorMessage = "An Article must have a Author")]
+        public int? AuthorId { get; set; }
         public virtual Author Author { get; set; }
     }
 }

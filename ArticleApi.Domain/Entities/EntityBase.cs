@@ -1,4 +1,6 @@
-﻿namespace ArticleApi.Domain.Entities
+﻿using ArticleApi.Domain.Interfaces;
+
+namespace ArticleApi.Domain.Entities
 {
     public abstract class EntityBase<T> : IEntity
     {

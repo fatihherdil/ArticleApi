@@ -18,7 +18,7 @@ http://localhost:5000/Authors
 ## Database
 Database creation scripts are Under Documents Folder.
 
-##### Selecting Database Provider
+#### Selecting Database Provider
 We have 2 Providers for Database Connection
 - MySql
 - MsSql
@@ -26,9 +26,9 @@ We have 2 Providers for Database Connection
 You can change Database Provider in ```appsettings.json``` file and there are Connection Strings for each Database Provider please change them with Provider.
 
 # Design Patterns
-##### Null Object Pattern
+#### Null Object Pattern
 Used for When an Entity returns Null project or Api consumer should not throw exception.
-##### Data Transfer Object Pattern
+#### Data Transfer Object Pattern
 Used for StackOverFlow Exception also Adding new Entites.
 
 # Technologies

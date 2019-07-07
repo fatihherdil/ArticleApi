@@ -25,11 +25,20 @@ We have 2 Providers for Database Connection
 
 You can change Database Provider in ```appsettings.json``` file and there are Connection Strings for each Database Provider please change them with Provider.
 
-# Answers
+# Design Patterns
+##### Null Object Pattern
+Used for When an Entity returns Null project or Api consumer should not throw exception.
+##### Data Transfer Object Pattern
+Used for StackOverFlow Exception also Adding new Entites.
 
-I used Null Object and Data Transfer Object Design Patterns because it was needed in the project.
+# Technologies
+- Entity Framework Core
+Besides Entity Framework Core no third party library or Framework used.
+I didn't use MySql with Entity Framework Core, I used MsSql, SqlLite, Postgresql.
 
-I didn't use MySql with Entity Framework Core, I used MsSql, SqlLite, Postgresql. I didn't use any third party Library or Framework.
-
+# Time Challenge
 If i had more time i would do More Testing And Write Tests and Make a Good Expession Predicate Builder.
+
+# Architectural Pattern
+I used DDD(Domain Driven Design) for this particular project.
  

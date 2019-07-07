@@ -38,6 +38,12 @@ namespace ArticleApi.Application.Models
         public static ArticleDto ConvertToDto(this Article article)
         {
             if(article == null) return new ArticleDto().GetNullInstance();
+
+            var author = article.Author;
+            var nullAuthor = new Author().GetNullInstance();
+            var authorName = author != null ? author.Name : nullAuthor.Name;
+            var authorBio = author != null ? author.Bio : nullAuthor.Bio;
+
             return new ArticleDto
             {
                 Id = article.Id,
@@ -46,8 +52,8 @@ namespace ArticleApi.Application.Models
                 Author = new ArticleAuthorDto
                 {
                     Id = article.AuthorId,
-                    Name = article.Author.Name,
-                    Bio = article.Author.Bio
+                    Name = authorName,
+                    Bio = authorBio
                 }
             };
         }

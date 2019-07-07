@@ -52,7 +52,7 @@ namespace ArticleApi.Web.Api
                         options.UseLazyLoadingProxies();
                     });
                     break;
-                case "SqlServer":
+                case "MsSql":
                     services.AddDbContext<ArticleApiDbContext>(options =>
                     {
                         options.UseSqlServer(Configuration.GetConnectionString("sqlServer"));
@@ -63,8 +63,8 @@ namespace ArticleApi.Web.Api
                     throw new IndexOutOfRangeException("Unknown DB Provider.");
             }
 
-            services.AddScoped<RepositoryBase<Article>>();
-            services.AddScoped<RepositoryBase<Author>>();
+            services.AddTransient<RepositoryBase<Article>>();
+            services.AddTransient<RepositoryBase<Author>>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

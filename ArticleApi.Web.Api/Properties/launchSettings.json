@@ -22,7 +22,7 @@
       "launchBrowser": true,
       "launchUrl": "Articles",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Release"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "applicationUrl": "http://localhost:5000"
     }

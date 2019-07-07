@@ -42,12 +42,20 @@ namespace ArticleApi.Application.Models
         public static AuthorDto ConvertToDto(this Author author)
         {
             if(author == null) return new AuthorDto().GetNullInstance();
+            ICollection<AuthorArticleDto> articles = null;
+
+            if (author.Articles == null || author.Articles.Count <= 0)
+                articles = new HashSet<AuthorArticleDto> { new AuthorArticleDto().GetNullInstance() };
+            else
+                articles = author.Articles?.Select(article => new AuthorArticleDto
+                { Id = article.Id, Content = article.Content, Name = article.Content }).ToList();
+
             return new AuthorDto
             {
                 Id = author.Id,
                 Name = author.Name,
                 Bio = author.Bio,
-                Articles = author.Articles?.Select(article => new AuthorArticleDto { Id = article.Id, Content = article.Content, Name = article.Content }).ToList()
+                Articles = articles
             };
         }
     }

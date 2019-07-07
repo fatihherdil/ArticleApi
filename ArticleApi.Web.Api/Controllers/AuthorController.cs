@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using ArticleApi.Application.Repository;
@@ -8,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using ArticleApi.Application.Exceptions;
 using ArticleApi.Application.Models;
+using ArticleApi.Domain.Exceptions;
 
 namespace ArticleApi.Web.Api.Controllers
 {
@@ -23,6 +25,29 @@ namespace ArticleApi.Web.Api.Controllers
         {
             var authors = await Repository.GetAllAsync();
             return Json(new DefaultResponse(authors.Select(author => author.ConvertToDto())));
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Author([FromQuery] int? id, [FromQuery] string n, [FromQuery] string b)
+        {
+            ICollection<Author> entities = new HashSet<Author>();
+            if (id.HasValue && id > 0)
+            {
+                var entity = await Repository.GetByIdAsync(id.Value);
+                entities.Add(entity);
+            }
+            else
+            {
+                if (!string.IsNullOrEmpty(n) && !string.IsNullOrEmpty(b))
+                    entities = await Repository.GetAllByAsync(author =>author.Name.Contains(n) && author.Bio.Contains(b));
+                else if (!string.IsNullOrEmpty(n))
+                    entities = await Repository.GetAllByAsync(author => author.Name.Contains(n));
+                else if (!string.IsNullOrEmpty(b))
+                    entities = await Repository.GetAllByAsync(author => author.Bio.Contains(b));
+                else throw new EntityNotFoundException<Author>();
+            }
+
+            return Json(new DefaultResponse(entities.Select(entity => entity.ConvertToDto())));
         }
 
         [HttpPost]

@@ -8,6 +8,7 @@ using ArticleApi.Application.Response;
 using ArticleApi.Domain.Exceptions;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
 namespace ArticleApi.Web.Api.Middlewares
 {
@@ -39,7 +40,18 @@ namespace ArticleApi.Web.Api.Middlewares
 
             var responseCode = exception != null ? (int) exception.StatusCode : (int) code;
 
-            var result = JsonConvert.SerializeObject(new ErrorResponse(responseCode, ex));
+            //DefaultContractResolver contractResolver = new DefaultContractResolver
+            //{
+            //    NamingStrategy = new CamelCaseNamingStrategy()
+            //};
+
+            var result = /*JsonConvert.SerializeObject(new ErrorResponse((HttpStatusCode)responseCode, ex.Message));*/
+            JsonConvert.SerializeObject(new ErrorResponse((HttpStatusCode) responseCode, ex.Message),
+                new JsonSerializerSettings()
+                {
+                    ContractResolver = new CamelCasePropertyNamesContractResolver(),
+                    Formatting = Formatting.Indented
+                });
             context.Response.ContentType = "application/json";
             context.Response.StatusCode = responseCode;
             return context.Response.WriteAsync(result);

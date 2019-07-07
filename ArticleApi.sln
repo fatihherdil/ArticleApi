@@ -5,23 +5,29 @@ VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{B39AD957-9F1C-4C9F-A2C1-6C4546BD8A0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArticleApi.Domain", "ArticleApi.Domain\ArticleApi.Domain.csproj", "{0B7388BF-4A64-4A4F-9F1D-41D1274DFF66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArticleApi.Domain", "ArticleApi.Domain\ArticleApi.Domain.csproj", "{0B7388BF-4A64-4A4F-9F1D-41D1274DFF66}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{41B3B722-D314-47D8-935F-7CEA526B646D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArticleApi.Persistence", "ArticleApi.Persistence\ArticleApi.Persistence.csproj", "{1E649AD1-1E52-4A6D-8DA5-A04141AD9A8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArticleApi.Persistence", "ArticleApi.Persistence\ArticleApi.Persistence.csproj", "{1E649AD1-1E52-4A6D-8DA5-A04141AD9A8F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{BC21E4C1-A258-45E8-A18C-C8F87AFFD188}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArticleApi.Web.Api", "ArticleApi.Web.Api\ArticleApi.Web.Api.csproj", "{67C9CA5A-AB92-40DD-B0A1-EDD7ADB67C44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArticleApi.Web.Api", "ArticleApi.Web.Api\ArticleApi.Web.Api.csproj", "{67C9CA5A-AB92-40DD-B0A1-EDD7ADB67C44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArticleApi.Application", "ArticleApi.Application\ArticleApi.Application.csproj", "{D75BC830-7B72-445A-8877-29AF0A426E99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArticleApi.Application", "ArticleApi.Application\ArticleApi.Application.csproj", "{D75BC830-7B72-445A-8877-29AF0A426E99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArticleApi.Infrastructure", "ArticleApi.Infrastructure\ArticleApi.Infrastructure.csproj", "{84F4652E-AEB2-4E5A-BBA0-7253B6ED5FDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArticleApi.Infrastructure", "ArticleApi.Infrastructure\ArticleApi.Infrastructure.csproj", "{84F4652E-AEB2-4E5A-BBA0-7253B6ED5FDF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{49D7A492-7C10-4A74-86D0-A0ADDB9E74A0}"
 	ProjectSection(SolutionItems) = preProject
+		DatabaseMsSqlServer.sql = DatabaseMsSqlServer.sql
 		DatabaseMySql.sql = DatabaseMySql.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{44EDEE17-1289-4322-B160-FDC13069E8E2}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global

@@ -1,4 +1,5 @@
-﻿using ArticleApi.Application.Interfaces;
+﻿using System.Net;
+using ArticleApi.Application.Interfaces;
 
 namespace ArticleApi.Application.Response
 {
@@ -8,10 +9,10 @@ namespace ArticleApi.Application.Response
         public int ResponseCode { get; set; }
         public object Response { get; set; }
 
-        public ErrorResponse(int responseCode, object response)
+        public ErrorResponse(HttpStatusCode statusCode, object response)
         {
-            Status = "error";
-            ResponseCode = responseCode;
+            Status = statusCode.ToString();
+            ResponseCode = (int)statusCode;
             Response = response;
         }
     }

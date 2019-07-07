@@ -2,7 +2,7 @@
 .Net Core WebApi Sample
 
 # Before RUN ! 
-Run Database Scripts From Documents for Your Database Provider
+Run Database Scripts From Solution Folder for Your Database Provider
 
 ##### Naming Conventions of Database Scripts:
 Database[DbProvider].sql
@@ -16,7 +16,7 @@ http://localhost:5000/Articles
 http://localhost:5000/Authors
 
 ## Database
-Database creation scripts are Under Documents Folder.
+Database creation scripts are Under Solution Folder.
 
 #### Selecting Database Provider
 We have 2 Providers for Database Connection
